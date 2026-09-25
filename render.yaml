@@ -1,0 +1,19 @@
+# Render Blueprint Configuration
+# Unrated Coder t.me/Unrated_Coder
+
+services:
+  - type: worker
+    name: mediainfo-bot
+    env: docker
+    plan: free
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: OWNER_ID
+        sync: false
