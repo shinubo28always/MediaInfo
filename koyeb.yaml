@@ -1,0 +1,21 @@
+# Koyeb Deployment Configuration
+# Unrated Coder t.me/Unrated_Coder
+
+version: "1"
+services:
+  - name: mediainfo-bot
+    type: worker
+    image: golang:1.24-alpine
+    build:
+      builder: dockerfile
+    env:
+      - key: API_ID
+        value: ""
+      - key: API_HASH
+        value: ""
+      - key: BOT_TOKEN
+        value: ""
+      - key: MONGO_URI
+        value: ""
+      - key: OWNER_ID
+        value: ""
